@@ -25,4 +25,4 @@ jobs:
           run_install: true
       - run: sh generate.sh
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.npm_token}}
