@@ -25,5 +25,5 @@ jobs:
           run_install: true
       - run: sh setup-npm.sh
         env:
-          NPM_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
       - run: sh generate.sh
