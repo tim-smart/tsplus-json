@@ -58,6 +58,7 @@ for project in config/*; do
 
   cd ../dist
   package_json "@tsplus-json/${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
+  cp "$cwd/README.md" .
 
   npm publish || true
 
