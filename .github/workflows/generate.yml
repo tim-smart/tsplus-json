@@ -23,6 +23,7 @@ jobs:
         with:
           version: "7.17.0"
           run_install: true
-      - run: sh generate.sh
+      - run: sh setup-npm.sh
         env:
           NPM_TOKEN: ${{secrets.npm_token}}
+      - run: sh generate.sh
