@@ -7,7 +7,7 @@ package_json() {
   cat <<EOF
 {
   "name": "$1",
-  "description": "Generated tsplus annotations",
+  "description": "Generated tsplus annotations for $3",
   "version": "$2",
   "publishConfig": {
     "access": "public"
@@ -15,6 +15,9 @@ package_json() {
   "repository": {
     "type": "git",
     "url": "https://github.com/tim-smart/tsplus-json.git"
+  },
+  "peerDependencies": {
+    "$3": "$4"
   },
   "license": "MIT",
   "tsPlusTypes": [
@@ -39,9 +42,10 @@ for project in config/*; do
   git clone "$git_repo" repo
   cd repo
 
+  package_name="$(npm pkg get name | sed 's/[",]//g')"
   latest_tag="$(git describe --tags --abbrev=0)"
   latest_version="${latest_tag#"v"}"
-  dist_version="${latest_version}+${SHORT_SHA}"
+  dist_version="${latest_version}-${SHORT_SHA}"
 
   git checkout -f "$latest_tag"
   cp -r "$tsplus_config" .
@@ -53,8 +57,9 @@ for project in config/*; do
   $tsplus_gen tsplus-gen.config.json > ../dist/annotations.json
 
   cd ../dist
-  package_json "@tsplus-json/${project_name}" "$dist_version" > package.json
+  package_json "@tsplus-json/${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
 
+  exit
   npm publish || true
 
   cd "$cwd"
