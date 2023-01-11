@@ -24,19 +24,19 @@ jobs:
           version: "7.17.0"
           run_install: true
       - run: sh generate.sh
-      - run: npm publish
+      - run: npm publish || true
         working-directory: config/effect-io/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish
+      - run: npm publish || true
         working-directory: config/effect-stm/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish
+      - run: npm publish || true
         working-directory: config/effect-stream/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish
+      - run: npm publish || true
         working-directory: config/fp-ts-data/dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
