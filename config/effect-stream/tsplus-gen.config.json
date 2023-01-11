@@ -1,0 +1,66 @@
+{
+  "project": {
+    "packageName": "@effect/stream",
+    "tsconfig": "tsconfig.build.json",
+    "rootDir": "src",
+    "exclude": ["**/internal/**"],
+    "moduleConfig": {
+      "@effect/stream": {
+        "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
+        "fluentNamespaces": ["effect/stream"]
+      }
+    }
+  },
+  "namespaces": [
+    {
+      "name": "effect/stream",
+      "type": {
+        "include": true,
+        "includeCompanion": true,
+        "companionSuffix": ".Ops"
+      },
+      "static": {
+        "include": true,
+        "staticSuffix": ".Ops"
+      },
+      "fluent": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "pipeable": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "getter": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      }
+    },
+    {
+      "name": "effect/io",
+      "static": {
+        "include": true,
+        "staticSuffix": ".Ops"
+      },
+      "fluent": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "pipeable": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "getter": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      }
+    }
+  ],
+  "additionalExtensions": []
+}

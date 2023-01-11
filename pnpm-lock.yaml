@@ -1,0 +1,64 @@
+lockfileVersion: 5.4
+
+specifiers:
+  tsplus-gen: ^0.2.20
+
+dependencies:
+  tsplus-gen: 0.2.20
+
+packages:
+
+  /@effect/core/0.0.16:
+    resolution: {integrity: sha512-JugbKcqo9CPdm4n7t/buO4nYxKwThafh0tXVvPgRC3RcwuOS1dzo3tIk6RVq1wYh8Kg4df5SwmdED2VvN4c/RA==}
+    dependencies:
+      '@effect/printer': 0.0.4
+      '@tsplus/stdlib': 0.2.8
+    dev: false
+
+  /@effect/printer/0.0.4:
+    resolution: {integrity: sha512-oTn6U9GCg01E+kYwUBs4LM6k6hVq0pA7ZAYKdj972n2LjYeqg4+We6ZqoYWH2Pw5TDHOavtIEdYqt61uUxiZgg==}
+    dependencies:
+      '@tsplus/stdlib': 0.2.8
+    dev: false
+
+  /@tsplus/stdlib/0.2.8:
+    resolution: {integrity: sha512-UKAN06h9V/wUflSbOU1WwACisXEi4+PHwGqR+bwxqcClrEAA8KKTTLZ0ATMbqbVAVTudE0vW4pd5iY6vGvSFBw==}
+    dev: false
+
+  /balanced-match/1.0.2:
+    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+    dev: false
+
+  /brace-expansion/2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+    dependencies:
+      balanced-match: 1.0.2
+    dev: false
+
+  /minimatch/5.1.2:
+    resolution: {integrity: sha512-bNH9mmM9qsJ2X4r2Nat1B//1dJVcn3+iBLa3IgqJ7EbGaDNepL9QSHOxN4ng33s52VMMhhIfgCYDk3C4ZmlDAg==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: false
+
+  /tsplus-gen/0.2.20:
+    resolution: {integrity: sha512-K8++tF5oBtq5Evrv0LRU0gagOHcJjo3omgUvoV7zP7ISOF0h0DV3fpUJw3h45qKVWs6xDfBekqGB9wkgjb1WvA==}
+    hasBin: true
+    dependencies:
+      '@effect/core': 0.0.16
+      '@tsplus/stdlib': 0.2.8
+      minimatch: 5.1.2
+      typescript: 4.9.4
+      zod: 3.20.2
+    dev: false
+
+  /typescript/4.9.4:
+    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
+  /zod/3.20.2:
+    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
