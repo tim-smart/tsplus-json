@@ -34,9 +34,9 @@ for project in config/*; do
   tsplus_config="$project_path/tsplus-gen.config.json"
   annotations_dir="$project_path/annotations"
 
-  rm -rf tmp
-  mkdir tmp
-  cd tmp
+  cd "$project"
+
+  rm -rf dist repo
 
   mkdir dist
   git clone "$git_repo" repo
@@ -60,8 +60,5 @@ for project in config/*; do
   package_json "@tsplus-json/${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
   cp "$cwd/README.md" .
 
-  npm publish || true
-
   cd "$cwd"
-  rm -rf tmp
 done
