@@ -6,9 +6,10 @@ tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
 package_json() {
   cat <<EOF
 {
-  "name": "$1",
+  "name": "@tsplus-types/$1",
   "description": "Generated tsplus annotations for $3",
   "version": "$2",
+  "main": "./annotations.json",
   "publishConfig": {
     "access": "public"
   },
@@ -19,10 +20,7 @@ package_json() {
   "peerDependencies": {
     "$3": "$4"
   },
-  "license": "MIT",
-  "tsPlusTypes": [
-    "./annotations.json"
-  ]
+  "license": "MIT"
 }
 EOF
 }
@@ -57,7 +55,7 @@ for project in config/*; do
   $tsplus_gen tsplus-gen.config.json > ../dist/annotations.json
 
   cd ../dist
-  package_json "@tsplus-json/${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
+  package_json "${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
   cp "$cwd/README.md" .
 
   cd "$cwd"
