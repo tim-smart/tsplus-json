@@ -1,5 +1,4 @@
 SHORT_SHA="$(git rev-parse --short HEAD)"
-COMMIT_TS=$(git log -1 --format="%at")
 
 cwd="$(pwd)"
 tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
@@ -44,7 +43,7 @@ for project in config/*; do
   package_name="$(npm pkg get name | sed 's/[",]//g')"
   latest_tag="$(git describe --tags --abbrev=0)"
   latest_version="${latest_tag#"v"}"
-  dist_version="${latest_version}.${COMMIT_TS}"
+  dist_version="${latest_version}-${SHORT_SHA}"
 
   git checkout -f "$latest_tag"
   cp -r "$tsplus_config" .
