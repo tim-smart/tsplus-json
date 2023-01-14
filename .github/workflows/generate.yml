@@ -36,6 +36,6 @@ jobs:
       - run: npm publish || true
         working-directory: config/fp-ts__data/dist
       - run: npm publish || true
-        working-directory: config/fp-ts__codec/dist
+        working-directory: config/fp-ts__optic/dist
       - run: npm publish || true
         working-directory: config/fp-ts__schema/dist

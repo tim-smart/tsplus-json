@@ -1,19 +1,19 @@
 {
   "project": {
-    "packageName": "@fp-ts/codec",
+    "packageName": "@fp-ts/optic",
     "rootDir": "src",
     "tsconfig": "tsconfig.build.json",
     "exclude": ["**/internal/**"],
     "moduleConfig": {
-      "@fp-ts/codec": {
+      "@fp-ts/optic": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
-        "fluentNamespaces": ["fp-ts/codec"]
+        "fluentNamespaces": ["fp-ts/optic"]
       }
     }
   },
   "namespaces": [
     {
-      "name": "fp-ts/codec",
+      "name": "fp-ts/optic",
       "type": {
         "include": true,
         "includeCompanion": true,
