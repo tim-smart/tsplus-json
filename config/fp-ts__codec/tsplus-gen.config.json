@@ -1,0 +1,44 @@
+{
+  "project": {
+    "packageName": "@fp-ts/codec",
+    "rootDir": "src",
+    "tsconfig": "tsconfig.build.json",
+    "exclude": ["**/internal/**"],
+    "moduleConfig": {
+      "@fp-ts/codec": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["fp-ts/codec"]
+      }
+    }
+  },
+  "namespaces": [
+    {
+      "name": "fp-ts/codec",
+      "type": {
+        "include": true,
+        "includeCompanion": true,
+        "companionSuffix": ".Ops"
+      },
+      "static": {
+        "include": true,
+        "staticSuffix": ".Ops"
+      },
+      "fluent": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "pipeable": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "getter": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      }
+    }
+  ],
+  "additionalExtensions": []
+}
