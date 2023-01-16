@@ -14,11 +14,15 @@ package_json() {
   cat <<EOF
 {
   "name": "@tsplus-types/$1",
-  "description": "Generated tsplus annotations for $3",
   "version": "$2",
-  "main": "./annotations.json",
+  "type": "module",
+  "description": "Generated tsplus annotations for $3",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    ".": "./annotations.json",
+    "./*": "./*.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +42,7 @@ for project in config/*; do
   github="$(cat "$project_path/github")"
   tsplus_config="$project_path/tsplus-gen.config.json"
   annotations_dir="$project_path/annotations"
+  src_dir="$project_path/src"
 
   cd "$project"
 
@@ -64,6 +69,10 @@ for project in config/*; do
   cd ../dist
   package_json "${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
   cp "$cwd/README.md" .
+
+  if [ -e "$src_dir" ]; then
+    cp -r "$src_dir"/* .
+  fi
 
   cd "$cwd"
 done
