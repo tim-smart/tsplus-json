@@ -69,6 +69,7 @@
     }
   ],
   "additionalExtensions": [
+    ["effect/io/Effect#sync", "static", "__call"],
     ["effect/io/Effect#unsafeRun", "fluent", "unsafeRun"],
 
     ["effect/io/Effect#orElse", "pipeable-operator", "|"],
