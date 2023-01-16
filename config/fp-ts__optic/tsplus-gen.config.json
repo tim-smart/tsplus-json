@@ -9,6 +9,9 @@
         "staticPrefixes": ["make", "from", "unsafeFrom"],
         "fluentNamespaces": ["fp-ts/optic"]
       }
+    },
+    "namespaceAliases": {
+      "fp-ts/optic": "fp-ts/optic/Optic"
     }
   },
   "namespaces": [

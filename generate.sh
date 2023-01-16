@@ -2,6 +2,13 @@ SHORT_SHA="$(git rev-parse --short HEAD)"
 
 cwd="$(pwd)"
 tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
+tarballjs="$cwd/tarball.js"
+
+latest_tarball() {
+  url=`curl -s https://api.github.com/repos/$1/releases/latest | node $tarballjs`
+  mkdir source
+  curl -L "$url" | tar -zx -C source --strip-components 1
+}
 
 package_json() {
   cat <<EOF
@@ -28,24 +35,24 @@ EOF
 for project in config/*; do
   project_name="$(basename $project)"
   project_path="$(readlink -f "$project")"
-  git_repo="$(cat "$project_path/git")"
+  github="$(cat "$project_path/github")"
   tsplus_config="$project_path/tsplus-gen.config.json"
   annotations_dir="$project_path/annotations"
 
   cd "$project"
 
-  rm -rf dist repo
+  rm -rf dist source
 
+  latest_tarball "$github"
   mkdir dist
-  git clone "$git_repo" repo
-  cd repo
+  cd source
+
+  pnpm i -P
 
   package_name="$(npm pkg get name | sed 's/[",]//g')"
-  latest_tag="$(git describe --tags --abbrev=0)"
-  latest_version="${latest_tag#"v"}"
+  latest_version="$(npm pkg get version | sed 's/[",]//g')"
   dist_version="${latest_version}-${SHORT_SHA}"
 
-  git checkout -f "$latest_tag"
   cp -r "$tsplus_config" .
 
   if [ -e "$annotations_dir" ]; then

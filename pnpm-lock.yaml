@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  tsplus-gen: ^0.2.20
+  tsplus-gen: ^0.2.22
 
 dependencies:
-  tsplus-gen: 0.2.20
+  tsplus-gen: 0.2.22
 
 packages:
 
@@ -35,20 +35,20 @@ packages:
       balanced-match: 1.0.2
     dev: false
 
-  /minimatch/5.1.2:
-    resolution: {integrity: sha512-bNH9mmM9qsJ2X4r2Nat1B//1dJVcn3+iBLa3IgqJ7EbGaDNepL9QSHOxN4ng33s52VMMhhIfgCYDk3C4ZmlDAg==}
+  /minimatch/5.1.4:
+    resolution: {integrity: sha512-U0iNYXt9wALljzfnGkhFSy5sAC6/SCR3JrHrlsdJz4kF8MvhTRQNiC59iUi1iqsitV7abrNAJWElVL9pdnoUgw==}
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
     dev: false
 
-  /tsplus-gen/0.2.20:
-    resolution: {integrity: sha512-K8++tF5oBtq5Evrv0LRU0gagOHcJjo3omgUvoV7zP7ISOF0h0DV3fpUJw3h45qKVWs6xDfBekqGB9wkgjb1WvA==}
+  /tsplus-gen/0.2.22:
+    resolution: {integrity: sha512-02aLPfKu5YIHdosZqFNYHpP453tsBV1mDvPM7N6iQSBY7Nf6DYjeTfwipS/Gzy9rjiKEi/g8hk88hrox9uAqAQ==}
     hasBin: true
     dependencies:
       '@effect/core': 0.0.16
       '@tsplus/stdlib': 0.2.8
-      minimatch: 5.1.2
+      minimatch: 5.1.4
       typescript: 4.9.4
       zod: 3.20.2
     dev: false
