@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  tsplus-gen: ^0.2.22
+  tsplus-gen: ^0.2.23
 
 dependencies:
-  tsplus-gen: 0.2.22
+  tsplus-gen: 0.2.23
 
 packages:
 
@@ -42,8 +42,8 @@ packages:
       brace-expansion: 2.0.1
     dev: false
 
-  /tsplus-gen/0.2.22:
-    resolution: {integrity: sha512-02aLPfKu5YIHdosZqFNYHpP453tsBV1mDvPM7N6iQSBY7Nf6DYjeTfwipS/Gzy9rjiKEi/g8hk88hrox9uAqAQ==}
+  /tsplus-gen/0.2.23:
+    resolution: {integrity: sha512-AJAeAceCr1P4wmkX14veR3iCueUqAMEm3AJNcXjYlAAoVoHfIaEghtiilzUcJCOpTttKmRAlRWqllHSypdQhZw==}
     hasBin: true
     dependencies:
       '@effect/core': 0.0.16

@@ -63,6 +63,8 @@
     ["fp-ts/data/Equal#equals", "operator", "==", "fp-ts/data/Either"],
     ["fp-ts/data/Equal#equals", "operator", "==", "fp-ts/data/Option"],
 
+    ["fp-ts/data/Function.LazyArg#LazyArg", "type", "", "tsplus/LazyArgument"],
+
     ["fp-ts/data/List#concat", "pipeable-operator", "+"],
     ["fp-ts/data/List#prepend", "pipeable-operator", ">>"],
 

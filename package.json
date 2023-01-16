@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tsplus-gen": "^0.2.22"
+    "tsplus-gen": "^0.2.23"
   }
 }
