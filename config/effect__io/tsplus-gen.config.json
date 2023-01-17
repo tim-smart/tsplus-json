@@ -80,6 +80,10 @@
 
     ["effect/io/Exit#isFailure", "static", "isFailure", "effect/io/Exit.Ops"],
     ["effect/io/Exit#isSuccess", "static", "isSuccess", "effect/io/Exit.Ops"],
+    
+    ["effect/io/Layer#scoped", "pipeable", "toScopedLayer", "effect/io/Effect"],
+    ["effect/io/Layer#scopedEnvironment", "pipeable", "toScopedEnvironmentLayer", "effect/io/Effect"],
+    ["effect/io/Layer#scopedDiscard", "pipeable", "toScopedDiscardLayer", "effect/io/Effect"],
 
     ["effect/io/Layer#merge", "pipeable-operator", "+"],
     ["effect/io/Layer#orElse", "pipeable-operator", "|"],
