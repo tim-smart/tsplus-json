@@ -38,9 +38,6 @@ EOF
 
 for project in config/*; do
   project_name="$(basename $project)"
-  if [ "$1" != "" ] && [ "$1" != "$project_name" ]; then
-    continue
-  fi
   project_path="$(readlink -f "$project")"
   github="$(cat "$project_path/github")"
   tsplus_config="$project_path/tsplus-gen.config.json"
@@ -61,13 +58,11 @@ for project in config/*; do
   latest_version="$(npm pkg get version | sed 's/[",]//g')"
   dist_version="${latest_version}-${SHORT_SHA}"
 
-  cp -r "$tsplus_config" .
-
   if [ -e "$annotations_dir" ]; then
     cp -r "$annotations_dir" .
   fi
 
-  $tsplus_gen tsplus-gen.config.json > ../dist/annotations.json
+  $tsplus_gen "$tsplus_config" > ../dist/annotations.json
 
   cd ../dist
   package_json "${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
