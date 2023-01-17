@@ -69,8 +69,6 @@
 
     ["fp-ts/data/Function/LazyArg#LazyArg", "type", "", "tsplus/LazyArgument"],
 
-    ["fp-ts/data/Option#getOrUndefined", "getter", "value"],
-
     ["fp-ts/data/List#concat", "pipeable-operator", "+"],
     ["fp-ts/data/List#prepend", "pipeable-operator", ">>"],
 
