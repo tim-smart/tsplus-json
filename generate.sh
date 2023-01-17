@@ -1,3 +1,5 @@
+set -e
+
 SHORT_SHA="$(git rev-parse --short HEAD)"
 
 cwd="$(pwd)"

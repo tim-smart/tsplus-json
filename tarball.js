@@ -1,15 +1,15 @@
 const stdin = process.stdin;
 const inputChunks = [];
 
-stdin.resume();
 stdin.setEncoding('utf8');
+stdin.resume();
 
 stdin.on('data', function (chunk) {
-    inputChunks.push(chunk);
+  inputChunks.push(chunk);
 });
 
 stdin.on('end', function () {
-    const inputJSON = inputChunks.join()
-	const parsedData = JSON.parse(inputJSON)
-    process.stdout.write(parsedData.tarball_url);
+  const inputJSON = inputChunks.join()
+  const parsedData = JSON.parse(inputJSON)
+  process.stdout.write(parsedData.tarball_url);
 });
