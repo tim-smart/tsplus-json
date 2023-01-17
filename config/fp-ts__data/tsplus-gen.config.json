@@ -45,6 +45,7 @@
     }
   ],
   "additionalExtensions": [
+    ["fp-ts/data/Chunk#make", "static", "__call"],
     ["fp-ts/data/Chunk#append", "pipeable-operator", "<<"],
     ["fp-ts/data/Chunk#compact", "pipeable", "compact"],
     ["fp-ts/data/Chunk#concat", "pipeable-operator", "+"],
@@ -67,13 +68,31 @@
     ["fp-ts/data/Equal#equals", "operator", "==", "fp-ts/data/Either"],
     ["fp-ts/data/Equal#equals", "operator", "==", "fp-ts/data/Option"],
 
+    ["fp-ts/data/Either#right", "static", "__call"],
+
+    ["fp-ts/data/Equivalence#make", "static", "__call"],
+    
     ["fp-ts/data/Function/LazyArg#LazyArg", "type", "", "tsplus/LazyArgument"],
 
+    ["fp-ts/data/HashMap#make", "static", "__call"],
+    ["fp-ts/data/HashSet#make", "static", "__call"],
+    
     ["fp-ts/data/List#concat", "pipeable-operator", "+"],
     ["fp-ts/data/List#prepend", "pipeable-operator", ">>"],
+    
+    ["fp-ts/data/MutableHashMap#make", "static", "__call"],
+    ["fp-ts/data/MutableHashSet#make", "static", "__call"],
+    ["fp-ts/data/MutableRef#make", "static", "__call"],
+
+    ["fp-ts/data/Option#some", "static", "__call"],
 
     ["fp-ts/data/Queue#enqueue", "pipeable-operator", "<<"],
     ["fp-ts/data/Queue#enqueueAll", "pipeable-operator", "+"],
-    ["fp-ts/data/Queue#prepend", "pipeable-operator", ">>"]
+    ["fp-ts/data/Queue#prepend", "pipeable-operator", ">>"],
+
+    ["fp-ts/data/SortedMap#make", "static", "__call"],
+    ["fp-ts/data/SortedSet#from", "static", "__call"],
+
+    ["fp-ts/data/These#right", "static", "__call"]
   ]
 }
