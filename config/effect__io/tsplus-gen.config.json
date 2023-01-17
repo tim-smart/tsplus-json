@@ -91,7 +91,7 @@
     ["effect/io/Layer#scoped", "pipeable", "toScopedLayer", "effect/io/Effect"],
     ["effect/io/Layer#scopedEnvironment", "pipeable", "toScopedEnvironmentLayer", "effect/io/Effect"],
     ["effect/io/Layer#scopedDiscard", "pipeable", "toScopedDiscardLayer", "effect/io/Effect"],
-    ["effect/io/Layer#succeed", "static", "__call"],
+    ["effect/io/Layer#sync", "static", "__call"],
 
     ["effect/io/Layer#merge", "pipeable-operator", "+"],
     ["effect/io/Layer#orElse", "pipeable-operator", "|"],
