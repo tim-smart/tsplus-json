@@ -46,7 +46,11 @@
   ],
   "additionalExtensions": [
     ["fp-ts/data/Chunk#append", "pipeable-operator", "<<"],
+    ["fp-ts/data/Chunk#compact", "pipeable", "compact"],
     ["fp-ts/data/Chunk#concat", "pipeable-operator", "+"],
+    ["fp-ts/data/Chunk#filterMap", "pipeable", "filterMap"],
+    ["fp-ts/data/Chunk#filterMapWithIndex", "pipeable", "filterMapWithIndex"],
+    ["fp-ts/data/Chunk#filterMapWhile", "pipeable", "filterMapWhile"],
     ["fp-ts/data/Chunk#prepend", "pipeable-operator", ">>"],
 
     ["fp-ts/data/Duration#add", "pipeable-operator", "+"],
@@ -64,6 +68,8 @@
     ["fp-ts/data/Equal#equals", "operator", "==", "fp-ts/data/Option"],
 
     ["fp-ts/data/Function/LazyArg#LazyArg", "type", "", "tsplus/LazyArgument"],
+
+    ["fp-ts/data/Option#getOrUndefined", "getter", "value"],
 
     ["fp-ts/data/List#concat", "pipeable-operator", "+"],
     ["fp-ts/data/List#prepend", "pipeable-operator", ">>"],
