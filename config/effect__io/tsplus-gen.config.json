@@ -74,6 +74,9 @@
 
     ["effect/io/Effect#orElse", "pipeable-operator", "|"],
     ["effect/io/Effect#makeSemaphore", "static", "make", "effect/io/Effect/Semaphore.Ops"],
+    ["effect/io/Effect#service", "getter", "access", "fp-ts/data/Context/Tag"],
+    ["effect/io/Effect#serviceWith", "getter", "accessWith", "fp-ts/data/Context/Tag"],
+    ["effect/io/Effect#serviceWithEffect", "getter", "accessWithEffect", "fp-ts/data/Context/Tag"],
     ["effect/io/Effect#unsafeMakeSemaphore", "static", "unsafeMake", "effect/io/Effect/Semaphore.Ops"],
     ["effect/io/Effect#zip", "pipeable-operator", "+"],
     ["effect/io/Effect#zipPar", "pipeable-operator", "&"],
