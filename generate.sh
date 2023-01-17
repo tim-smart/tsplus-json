@@ -7,7 +7,8 @@ tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
 tarballjs="$cwd/tarball.js"
 
 latest_tarball() {
-  url=`curl -s https://api.github.com/repos/$1/releases/latest | node $tarballjs`
+  curl -v "https://api.github.com/repos/$1/releases/latest"
+  url=`curl -s "https://api.github.com/repos/$1/releases/latest" | node $tarballjs`
   mkdir source
   curl -L "$url" | tar -zx -C source --strip-components 1
 }
