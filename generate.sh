@@ -38,6 +38,9 @@ EOF
 
 for project in config/*; do
   project_name="$(basename $project)"
+  if [ "$1" != "" ] && [ "$1" != "$project_name" ]; then
+    continue
+  fi
   project_path="$(readlink -f "$project")"
   github="$(cat "$project_path/github")"
   tsplus_config="$project_path/tsplus-gen.config.json"
