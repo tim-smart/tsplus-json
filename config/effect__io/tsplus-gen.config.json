@@ -9,6 +9,10 @@
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
         "fluentNamespaces": ["effect/io", "Iterable"]
       },
+      "@effect/io/Cached": {
+        "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
+        "fluentNamespaces": ["effect/io/Cached"]
+      },
       "@effect/io/Layer": {
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
         "fluentNamespaces": ["effect/io/Layer"]
@@ -72,7 +76,6 @@
     ["effect/io/Config#succeed", "static", "__call"],
 
     ["effect/io/Effect#sync", "static", "__call"],
-    ["effect/io/Effect#unsafeRun", "fluent", "unsafeRun"],
 
     ["effect/io/Effect#orElse", "pipeable-operator", "|"],
     ["effect/io/Effect#makeSemaphore", "static", "make", "effect/io/Effect/Semaphore.Ops"],
@@ -85,9 +88,6 @@
     ["effect/io/Effect#zipLeft", "pipeable-operator", "<"],
     ["effect/io/Effect#zipRight", "pipeable-operator", ">"],
 
-    ["effect/io/Exit#isFailure", "static", "isFailure", "effect/io/Exit.Ops"],
-    ["effect/io/Exit#isSuccess", "static", "isSuccess", "effect/io/Exit.Ops"],
-    
     ["effect/io/Layer#scoped", "pipeable", "toScopedLayer", "effect/io/Effect"],
     ["effect/io/Layer#scopedEnvironment", "pipeable", "toScopedEnvironmentLayer", "effect/io/Effect"],
     ["effect/io/Layer#scopedDiscard", "pipeable", "toScopedDiscardLayer", "effect/io/Effect"],
