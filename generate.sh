@@ -7,8 +7,13 @@ tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
 tarballjs="$cwd/tarball.js"
 
 latest_tarball() {
-  curl -v "https://api.github.com/repos/$1/releases/latest"
-  url=`curl -s "https://api.github.com/repos/$1/releases/latest" | node $tarballjs`
+  opts=(-s)
+
+  if [ -n "$GITHUB_TOKEN" ]; then
+    opts+=(-H "Authorization: Bearer $GITHUB_TOKEN")
+  fi
+
+  url=`curl "${opts[@]}" "https://api.github.com/repos/$1/releases/latest" | node $tarballjs`
   mkdir source
   curl -L "$url" | tar -zx -C source --strip-components 1
 }
