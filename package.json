@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tsplus-gen": "^0.2.24"
+    "tsplus-gen": "^0.2.25"
   }
 }
