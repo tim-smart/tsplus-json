@@ -9,6 +9,14 @@
         "staticPrefixes": ["make", "from", "unsafeFrom"],
         "fluentNamespaces": ["fp-ts/data"]
       },
+      "@fp-ts/data/Boolean": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": []
+      },
+      "@fp-ts/data/Differ": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["fp-ts/data/Differ"]
+      },
       "@fp-ts/data/ReadonlyArray": {
         "ignore": true
       }
