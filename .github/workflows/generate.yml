@@ -26,7 +26,7 @@ jobs:
         with:
           version: "7.17.0"
           run_install: true
-      - run: sh generate.sh
+      - run: ./generate.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm publish || true
