@@ -95,8 +95,8 @@
 
     ["effect/io/Layer#merge", "pipeable-operator", "+"],
     ["effect/io/Layer#orElse", "pipeable-operator", "|"],
-    ["effect/io/Layer#provideTo", "pipeable-operator", ">>"],
-    ["effect/io/Layer#provideToAndMerge", "pipeable-operator", ">"],
+    ["effect/io/Layer#provide", "pipeable-operator", ">>"],
+    ["effect/io/Layer#provideMerge", "pipeable-operator", ">"],
 
     ["effect/io/Queue.Enqueue#offer", "pipeable-operator", "<<"],
     ["effect/io/Queue.Enqueue#offerAll", "pipeable-operator", "+"],
