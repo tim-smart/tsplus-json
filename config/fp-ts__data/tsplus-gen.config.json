@@ -101,6 +101,6 @@
     ["fp-ts/data/SortedMap#make", "static", "__call", "fp-ts/data/SortedMap.Ops"],
     ["fp-ts/data/SortedSet#from", "static", "__call", "fp-ts/data/SortedSet.Ops"],
 
-    ["fp-ts/data/These#right", "static", "__call, "fp-ts/data/These.Ops]
+    ["fp-ts/data/These#right", "static", "__call", "fp-ts/data/These.Ops"]
   ]
 }
