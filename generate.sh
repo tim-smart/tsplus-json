@@ -55,6 +55,7 @@ for project in config/*; do
   echo "Generation annotations for $project_name"
 
   cd "$project"
+  SHORT_SHA="$(git log -n 1 --pretty=format:%h .)"
 
   rm -rf dist source
 
@@ -66,7 +67,6 @@ for project in config/*; do
 
   package_name="$(npm pkg get name | sed 's/[",]//g')"
   latest_version="$(npm pkg get version | sed 's/[",]//g')"
-  SHORT_SHA="$(git log -n 1 --pretty=format:%h "$project_path")"
   dist_version="${latest_version}-${SHORT_SHA}"
 
   if [ -e "$annotations_dir" ]; then
