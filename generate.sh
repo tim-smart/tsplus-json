@@ -78,6 +78,10 @@ for project in config/*; do
   package_json "${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
   cp "$cwd/README.md" .
 
+  if [ "$NPM_PUBLISH" == "true" ]; then
+    npm publish || true
+  fi
+
   if [ -e "$src_dir" ]; then
     cp -r "$src_dir"/* .
   fi

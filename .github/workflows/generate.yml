@@ -29,15 +29,5 @@ jobs:
       - run: ./generate.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm publish || true
-        working-directory: config/effect__io/dist
-      - run: npm publish || true
-        working-directory: config/effect__stm/dist
-      - run: npm publish || true
-        working-directory: config/effect__stream/dist
-      - run: npm publish || true
-        working-directory: config/fp-ts__data/dist
-      - run: npm publish || true
-        working-directory: config/fp-ts__optic/dist
-      - run: npm publish || true
-        working-directory: config/fp-ts__schema/dist
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_PUBLISH: "true"
