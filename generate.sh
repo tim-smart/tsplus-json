@@ -55,7 +55,7 @@ for project in config/*; do
   echo "Generation annotations for $project_name"
 
   cd "$project"
-  SHORT_SHA="$(git log -n 1 --pretty=format:%h .)"
+  SHORT_SHA="$(git log -n 1 --pretty=format:%h -- ".")"
 
   rm -rf dist source
 
@@ -79,12 +79,12 @@ for project in config/*; do
   package_json "${project_name}" "$dist_version" "$package_name" "$latest_version" > package.json
   cp "$cwd/README.md" .
 
-  if [ "$NPM_PUBLISH" == "true" ]; then
-    npm publish || true
-  fi
-
   if [ -e "$src_dir" ]; then
     cp -r "$src_dir"/* .
+  fi
+
+  if [ "$NPM_PUBLISH" == "true" ]; then
+    npm publish || true
   fi
 
   cd "$cwd"
