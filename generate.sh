@@ -6,6 +6,8 @@ cwd="$(pwd)"
 tsplus_gen="$cwd/node_modules/.bin/tsplus-gen"
 tarballjs="$cwd/tarball.js"
 
+SHORT_SHA=`git rev-parse --short HEAD`
+
 latest_tarball() {
   opts=(-s)
 
@@ -55,7 +57,6 @@ for project in config/*; do
   echo "Generation annotations for $project_name"
 
   cd "$project"
-  SHORT_SHA="$(git log -n 1 --pretty=format:%h -- ".")"
 
   rm -rf dist source
 
