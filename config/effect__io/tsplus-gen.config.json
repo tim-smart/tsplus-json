@@ -88,9 +88,6 @@
     ["effect/io/Effect#zipLeft", "pipeable-operator", "<"],
     ["effect/io/Effect#zipRight", "pipeable-operator", ">"],
 
-    ["effect/io/Layer#scoped", "pipeable", "toScopedLayer", "effect/io/Effect"],
-    ["effect/io/Layer#scopedEnvironment", "pipeable", "toScopedEnvironmentLayer", "effect/io/Effect"],
-    ["effect/io/Layer#scopedDiscard", "pipeable", "toScopedDiscardLayer", "effect/io/Effect"],
     ["effect/io/Layer#sync", "static", "__call", "effect/io/Layer.Ops"],
 
     ["effect/io/Layer#merge", "pipeable-operator", "+"],
