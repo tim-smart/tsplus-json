@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "tsplus-gen": "^0.2.26"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.3"
   }
 }
