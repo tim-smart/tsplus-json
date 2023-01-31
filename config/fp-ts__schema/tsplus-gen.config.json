@@ -40,5 +40,11 @@
       }
     }
   ],
-  "additionalExtensions": []
+  "additionalExtensions": [
+    ["fp-ts/schema/Parser#decode", "getter", "decode", "fp-ts/schema/Schema"],
+    ["fp-ts/schema/Parser#decodeOrThrow", "getter", "decodeOrThrow", "fp-ts/schema/Schema"],
+    ["fp-ts/schema/Parser#encode", "getter", "encode", "fp-ts/schema/Schema"],
+    ["fp-ts/schema/Parser#encodeOrThrow", "getter", "encodeOrThrow", "fp-ts/schema/Schema"],
+    ["fp-ts/schema/Parser#is", "getter", "guard", "fp-ts/schema/Schema"]
+  ]
 }
