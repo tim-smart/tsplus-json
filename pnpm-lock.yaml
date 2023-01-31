@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  prettier: ^2.8.3
   tsplus-gen: ^0.2.26
 
 dependencies:
   tsplus-gen: 0.2.26
+
+devDependencies:
+  prettier: 2.8.3
 
 packages:
 
@@ -41,6 +45,12 @@ packages:
     dependencies:
       brace-expansion: 2.0.1
     dev: false
+
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /tsplus-gen/0.2.26:
     resolution: {integrity: sha512-rNDINr3JCvGqUvk54dU4o09sJ4X1o4AdeYuC6TuF66Wb9MMC8PkZyBE+FlzhRHCxQqqBudi8+7mrEubulYJgiQ==}
