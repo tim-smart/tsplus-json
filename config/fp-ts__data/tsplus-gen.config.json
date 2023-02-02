@@ -7,7 +7,7 @@
     "moduleConfig": {
       "@fp-ts/data": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
-        "fluentNamespaces": ["fp-ts/data"]
+        "fluentNamespaces": ["fp-ts/data", "fp-ts/core"]
       },
       "@fp-ts/data/Boolean": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
