@@ -25,15 +25,11 @@ package_json() {
 {
   "name": "@tsplus-types/$1",
   "version": "$2",
-  "type": "module",
   "description": "Generated tsplus annotations for $3",
   "publishConfig": {
     "access": "public"
   },
-  "exports": {
-    ".": "./annotations.json",
-    "./*": "./*.js"
-  },
+  "main": "./annotations.json",
   "repository": {
     "type": "git",
     "url": "https://github.com/tim-smart/tsplus-json.git"
