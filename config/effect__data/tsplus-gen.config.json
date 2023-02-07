@@ -9,6 +9,10 @@
         "staticPrefixes": ["make", "from", "unsafeFrom"],
         "fluentNamespaces": ["effect/data", "fp-ts/core"]
       },
+      "@effect/data/Brand": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["effect/data"]
+      },
       "@effect/data/Differ": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
         "fluentNamespaces": ["effect/data/Differ"]

@@ -2,10 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   prettier: ^2.8.3
-  tsplus-gen: ^0.2.27
+  tsplus-gen: ^0.2.28
 
 dependencies:
-  tsplus-gen: 0.2.27
+  tsplus-gen: 0.2.28
 
 devDependencies:
   prettier: 2.8.3
@@ -52,8 +52,8 @@ packages:
     hasBin: true
     dev: true
 
-  /tsplus-gen/0.2.27:
-    resolution: {integrity: sha512-HY2/w30Un8Vp4pKOZlzzosu6g+WJIxRbqR44x+GgKVRQ+D3cK6cUwTB6U7Dn6GhLT/mVB6BiiU/V/9itIsjG4Q==}
+  /tsplus-gen/0.2.28:
+    resolution: {integrity: sha512-gbGBO/LdwMLAUuaiVVD9O4AZ6K60cW2xEy7WIs0OhuI8yCfKTkJ2NjSGr+1sB/AZTOGYHd/qH95V5qdPwBtz7A==}
     hasBin: true
     dependencies:
       '@effect/core': 0.0.16
