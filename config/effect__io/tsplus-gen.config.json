@@ -88,18 +88,18 @@
       "make",
       "effect/io/Effect/Semaphore.Ops"
     ],
-    ["effect/io/Effect#service", "getter", "access", "fp-ts/data/Context/Tag"],
+    ["effect/io/Effect#service", "getter", "access", "effect/data/Context/Tag"],
     [
       "effect/io/Effect#serviceWith",
       "fluent",
       "accessWith",
-      "fp-ts/data/Context/Tag"
+      "effect/data/Context/Tag"
     ],
     [
       "effect/io/Effect#serviceWithEffect",
       "fluent",
       "accessWithEffect",
-      "fp-ts/data/Context/Tag"
+      "effect/data/Context/Tag"
     ],
     [
       "effect/io/Effect#unsafeMakeSemaphore",
