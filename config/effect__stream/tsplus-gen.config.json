@@ -7,7 +7,7 @@
     "moduleConfig": {
       "@effect/stream": {
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
-        "fluentNamespaces": ["effect/stream"]
+        "fluentNamespaces": ["effect/stream", "effect/io"]
       }
     }
   },
