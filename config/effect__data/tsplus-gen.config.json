@@ -1,0 +1,111 @@
+{
+  "project": {
+    "packageName": "@effect/data",
+    "rootDir": "src",
+    "tsconfig": "tsconfig.build.json",
+    "exclude": ["**/internal/**"],
+    "moduleConfig": {
+      "@effect/data": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["effect/data", "fp-ts/core"]
+      },
+      "@effect/data/Differ": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["effect/data/Differ"]
+      }
+    }
+  },
+  "namespaces": [
+    {
+      "name": "effect/data",
+      "type": {
+        "include": true,
+        "includeCompanion": true,
+        "companionSuffix": ".Ops"
+      },
+      "static": {
+        "include": true,
+        "staticSuffix": ".Ops"
+      },
+      "fluent": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "pipeable": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "getter": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      }
+    }
+  ],
+  "additionalExtensions": [
+    ["effect/data/Chunk#make", "static", "__call", "effect/data/Chunk.Ops"],
+    ["effect/data/Chunk#compact", "getter", "compact"],
+    ["effect/data/Chunk#filterMap", "pipeable", "filterMap"],
+    ["effect/data/Chunk#filterMapWhile", "pipeable", "filterMap"],
+    ["effect/data/Chunk#filterMapWithIndex", "pipeable", "filterMapWithIndex"],
+
+    ["effect/data/Chunk#append", "pipeable-operator", "<<"],
+    ["effect/data/Chunk#concat", "pipeable-operator", "+"],
+    ["effect/data/Chunk#filterMapWhile", "pipeable", "filterMapWhile"],
+    ["effect/data/Chunk#prepend", "pipeable-operator", ">>"],
+
+    ["effect/data/Duration#add", "pipeable-operator", "+"],
+    ["effect/data/Duration#greaterThan", "pipeable-operator", ">"],
+    ["effect/data/Duration#greaterThanOrEqualTo", "pipeable-operator", ">="],
+    ["effect/data/Duration#lessThan", "pipeable-operator", "<"],
+    ["effect/data/Duration#lessThanOrEqualTo", "pipeable-operator", "<="],
+    ["effect/data/Duration#subtract", "pipeable-operator", "-"],
+    ["effect/data/Duration#times", "pipeable-operator", "*"],
+
+    ["effect/data/Equal#equals", "operator", "=="],
+    ["effect/data/Equal#equals", "operator", "==", "ReadonlyArray"],
+    ["effect/data/Equal#equals", "operator", "==", "effect/data/Duration"],
+    ["effect/data/Equal#equals", "operator", "==", "fp-ts/core/Either"],
+    ["effect/data/Equal#equals", "operator", "==", "fp-ts/core/Option"],
+
+    ["effect/data/HashMap#make", "static", "__call", "effect/data/HashMap.Ops"],
+    ["effect/data/HashSet#make", "static", "__call", "effect/data/HashSet.Ops"],
+
+    ["effect/data/List#concat", "pipeable-operator", "+"],
+    ["effect/data/List#prepend", "pipeable-operator", ">>"],
+
+    [
+      "effect/data/MutableHashMap#make",
+      "static",
+      "__call",
+      "effect/data/MutableHashMap.Ops"
+    ],
+    [
+      "effect/data/MutableHashSet#make",
+      "static",
+      "__call",
+      "effect/data/MutableHashSet.Ops"
+    ],
+    [
+      "effect/data/MutableRef#make",
+      "static",
+      "__call",
+      "effect/data/MutableRef.Ops"
+    ],
+
+    [
+      "effect/data/SortedMap#make",
+      "static",
+      "__call",
+      "effect/data/SortedMap.Ops"
+    ],
+    [
+      "effect/data/SortedSet#from",
+      "static",
+      "__call",
+      "effect/data/SortedSet.Ops"
+    ]
+  ]
+}
