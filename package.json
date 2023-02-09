@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tsplus-gen": "^0.2.28"
+    "tsplus-gen": "^0.2.29"
   },
   "devDependencies": {
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.4"
   }
 }
