@@ -80,8 +80,13 @@
     ["effect/io/Config#succeed", "static", "__call", "effect/io/Config.Ops"],
 
     ["effect/io/Effect#sync", "static", "__call", "effect/io/Effect.Ops"],
+    [
+      "effect/io/Effect#acquireRelease",
+      "static",
+      "acquireRelease",
+      "effect/io/Effect.Ops"
+    ],
 
-    ["effect/io/Effect#orElse", "pipeable-operator", "|"],
     [
       "effect/io/Effect#makeSemaphore",
       "static",
@@ -107,6 +112,8 @@
       "unsafeMake",
       "effect/io/Effect/Semaphore.Ops"
     ],
+
+    ["effect/io/Effect#orElse", "pipeable-operator", "|"],
     ["effect/io/Effect#zip", "pipeable-operator", "+"],
     ["effect/io/Effect#zipPar", "pipeable-operator", "&"],
     ["effect/io/Effect#zipLeft", "pipeable-operator", "<"],
