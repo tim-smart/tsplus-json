@@ -68,6 +68,12 @@
         "staticSuffix": ".Ops",
         "staticUsesOutputType": true
       },
+      "fluent": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Ops",
+        "staticUsesOutputType": true
+      },
       "exclude": [
         "@effect/io/Exit#collectAll",
         "@effect/io/Exit#collectAllPar",
