@@ -13,9 +13,17 @@
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
         "fluentNamespaces": ["effect/io/Cached"]
       },
+      "@effect/io/FiberRef": {
+        "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
+        "fluentNamespaces": ["effect/io/FiberRef"]
+      },
       "@effect/io/Layer": {
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
         "fluentNamespaces": ["effect/io/Layer"]
+      },
+      "@effect/io/Logger": {
+        "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
+        "fluentNamespaces": ["effect/io/Logger"]
       },
       "@effect/io/Metric": {
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
@@ -124,6 +132,21 @@
     ["effect/io/Effect#zipPar", "pipeable-operator", "&"],
     ["effect/io/Effect#zipLeft", "pipeable-operator", "<"],
     ["effect/io/Effect#zipRight", "pipeable-operator", ">"],
+
+    ["effect/io/FiberRef#locally", "fluent", "locally"],
+    [
+      "effect/io/FiberRef#locally",
+      "fluent",
+      "fiberRefLocally",
+      "effect/io/Effect"
+    ],
+    ["effect/io/FiberRef#locallyWith", "fluent", "locallyWith"],
+    [
+      "effect/io/FiberRef#locallyWith",
+      "fluent",
+      "fiberRefLocallyWith",
+      "effect/io/Effect"
+    ],
 
     ["effect/io/Layer#sync", "static", "__call", "effect/io/Layer.Ops"],
 
