@@ -62,5 +62,18 @@
       }
     }
   ],
-  "additionalExtensions": []
+  "additionalExtensions": [
+    [
+      "effect/stream/Stream#unwrap",
+      "getter",
+      "unwrapStream",
+      "effect/io/Effect"
+    ],
+    [
+      "effect/stream/Stream#unwrapScoped",
+      "getter",
+      "unwrapStreamScoped",
+      "effect/io/Effect"
+    ]
+  ]
 }
