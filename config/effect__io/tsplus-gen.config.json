@@ -155,6 +155,19 @@
     ["effect/io/Layer#provide", "pipeable-operator", ">>"],
     ["effect/io/Layer#provideMerge", "pipeable-operator", ">"],
 
+    ["effect/io/Logger/Level/LogLevel#greaterThan", "pipeable-operator", ">"],
+    [
+      "effect/io/Logger/Level/LogLevel#greaterThanEqual",
+      "pipeable-operator",
+      ">="
+    ],
+    ["effect/io/Logger/Level/LogLevel#lessThan", "pipeable-operator", "<"],
+    [
+      "effect/io/Logger/Level/LogLevel#lessThanEqual",
+      "pipeable-operator",
+      "<="
+    ],
+
     ["effect/io/Queue.Enqueue#offer", "pipeable-operator", "<<"],
     ["effect/io/Queue.Enqueue#offerAll", "pipeable-operator", "+"],
 
