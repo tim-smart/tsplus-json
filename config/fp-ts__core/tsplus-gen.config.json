@@ -3,7 +3,7 @@
     "packageName": "@fp-ts/core",
     "rootDir": "src",
     "tsconfig": "tsconfig.build.json",
-    "exclude": ["**/internal/**", "**/typeclass/**"],
+    "exclude": ["**/internal/**"],
     "moduleConfig": {
       "@fp-ts/core": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
@@ -12,6 +12,10 @@
       "@fp-ts/core/Boolean": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
         "fluentNamespaces": []
+      },
+      "@fp-ts/core/typeclass": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["@fp-ts/core/typeclass"]
       }
     }
   },
@@ -53,8 +57,13 @@
 
     ["fp-ts/core/Either#right", "static", "__call", "fp-ts/core/Either.Ops"],
 
-    ["fp-ts/core/Equivalence#make", "static", "__call", "fp-ts/core/Equivalence.Ops"],
-    
+    [
+      "fp-ts/core/Equivalence#make",
+      "static",
+      "__call",
+      "fp-ts/core/Equivalence.Ops"
+    ],
+
     ["fp-ts/core/Function/LazyArg#LazyArg", "type", "", "tsplus/LazyArgument"],
 
     ["fp-ts/core/Option#some", "static", "__call", "fp-ts/core/Option.Ops"]
