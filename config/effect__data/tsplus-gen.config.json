@@ -7,7 +7,7 @@
     "moduleConfig": {
       "@effect/data": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
-        "fluentNamespaces": ["effect/data", "fp-ts/core"]
+        "fluentNamespaces": ["effect/data"]
       },
       "@effect/data/Brand": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
@@ -16,6 +16,14 @@
       "@effect/data/Differ": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
         "fluentNamespaces": ["effect/data/Differ"]
+      },
+      "@effect/data/Boolean": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": []
+      },
+      "@effect/data/typeclass": {
+        "staticPrefixes": ["make", "from", "unsafeFrom"],
+        "fluentNamespaces": ["@effect/data/typeclass"]
       }
     }
   },
@@ -68,14 +76,24 @@
     ["effect/data/Duration#subtract", "pipeable-operator", "-"],
     ["effect/data/Duration#times", "pipeable-operator", "*"],
 
+    ["effect/data/Either#right", "static", "__call", "effect/data/Either.Ops"],
+
     ["effect/data/Equal#equals", "operator", "=="],
     ["effect/data/Equal#equals", "operator", "==", "ReadonlyArray"],
     ["effect/data/Equal#equals", "operator", "==", "effect/data/Duration"],
-    ["effect/data/Equal#equals", "operator", "==", "fp-ts/core/Either"],
-    ["effect/data/Equal#equals", "operator", "==", "fp-ts/core/Option"],
+    ["effect/data/Equal#equals", "operator", "==", "effect/data/Either"],
+    ["effect/data/Equal#equals", "operator", "==", "effect/data/Option"],
+    [
+      "effect/data/Equivalence#make",
+      "static",
+      "__call",
+      "effect/data/Equivalence.Ops"
+    ],
 
     ["effect/data/HashMap#make", "static", "__call", "effect/data/HashMap.Ops"],
     ["effect/data/HashSet#make", "static", "__call", "effect/data/HashSet.Ops"],
+
+    ["effect/data/Function/LazyArg#LazyArg", "type", "", "tsplus/LazyArgument"],
 
     ["effect/data/List#concat", "pipeable-operator", "+"],
     ["effect/data/List#prepend", "pipeable-operator", ">>"],
@@ -98,6 +116,8 @@
       "__call",
       "effect/data/MutableRef.Ops"
     ],
+
+    ["effect/data/Option#some", "static", "__call", "effect/data/Option.Ops"],
 
     [
       "effect/data/SortedMap#make",
