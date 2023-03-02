@@ -1,19 +1,19 @@
 {
   "project": {
-    "packageName": "@fp-ts/schema",
+    "packageName": "@effect/schema",
     "rootDir": "src",
     "tsconfig": "tsconfig.build.json",
     "exclude": ["**/internal/**"],
     "moduleConfig": {
-      "@fp-ts/schema": {
+      "@effect/schema": {
         "staticPrefixes": ["make", "from", "unsafeFrom"],
-        "fluentNamespaces": ["fp-ts/schema"]
+        "fluentNamespaces": ["effect/schema"]
       }
     }
   },
   "namespaces": [
     {
-      "name": "fp-ts/schema",
+      "name": "effect/schema",
       "type": {
         "include": true,
         "includeCompanion": true,
@@ -41,10 +41,20 @@
     }
   ],
   "additionalExtensions": [
-    ["fp-ts/schema/Parser#decode", "getter", "decode", "fp-ts/schema/Schema"],
-    ["fp-ts/schema/Parser#decodeOrThrow", "getter", "decodeOrThrow", "fp-ts/schema/Schema"],
-    ["fp-ts/schema/Parser#encode", "getter", "encode", "fp-ts/schema/Schema"],
-    ["fp-ts/schema/Parser#encodeOrThrow", "getter", "encodeOrThrow", "fp-ts/schema/Schema"],
-    ["fp-ts/schema/Parser#is", "getter", "guard", "fp-ts/schema/Schema"]
+    ["effect/schema/Parser#decode", "getter", "decode", "effect/schema/Schema"],
+    [
+      "effect/schema/Parser#decodeOrThrow",
+      "getter",
+      "decodeOrThrow",
+      "effect/schema/Schema"
+    ],
+    ["effect/schema/Parser#encode", "getter", "encode", "effect/schema/Schema"],
+    [
+      "effect/schema/Parser#encodeOrThrow",
+      "getter",
+      "encodeOrThrow",
+      "effect/schema/Schema"
+    ],
+    ["effect/schema/Parser#is", "getter", "guard", "effect/schema/Schema"]
   ]
 }

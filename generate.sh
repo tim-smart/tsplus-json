@@ -15,7 +15,7 @@ latest_tarball() {
     opts+=(-H "Authorization: Bearer $GITHUB_TOKEN")
   fi
 
-  url=`curl "${opts[@]}" "https://api.github.com/repos/$1/releases/latest" | node $tarballjs`
+  url=`curl "${opts[@]}" "https://api.github.com/repos/$1/releases?per_page=1" | node $tarballjs`
   mkdir source
   curl -L "$url" | tar -zx -C source --strip-components 1
 }
