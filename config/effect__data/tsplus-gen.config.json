@@ -68,7 +68,7 @@
     ["effect/data/Chunk#filterMapWhile", "pipeable", "filterMapWhile"],
     ["effect/data/Chunk#prepend", "pipeable-operator", ">>"],
 
-    ["effect/data/Duration#add", "pipeable-operator", "+"],
+    ["effect/data/Duration#sum", "pipeable-operator", "+"],
     ["effect/data/Duration#greaterThan", "pipeable-operator", ">"],
     ["effect/data/Duration#greaterThanOrEqualTo", "pipeable-operator", ">="],
     ["effect/data/Duration#lessThan", "pipeable-operator", "<"],
