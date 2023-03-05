@@ -2,10 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   prettier: ^2.8.4
-  tsplus-gen: ^0.2.30
+  tsplus-gen: ^0.2.31
 
 dependencies:
-  tsplus-gen: 0.2.30
+  tsplus-gen: 0.2.31
 
 devDependencies:
   prettier: 2.8.4
@@ -52,15 +52,15 @@ packages:
     hasBin: true
     dev: true
 
-  /tsplus-gen/0.2.30:
-    resolution: {integrity: sha512-tKEyM9lHAMFjPu4YazuyCp4HtV9TkayUleqhAsCFvBramyGwfPsvCvoptz9YnpVY9zSfodSycnD2sm4tmInhIQ==}
+  /tsplus-gen/0.2.31:
+    resolution: {integrity: sha512-uKvC0GMnkn6c19gPXbT3Xe7Q8RlwdA9eeQiO+h0gfDuMsYqEt8uNaG/UjonNpw9lzlX4qcZ3YjwH1XeS4iFmAg==}
     hasBin: true
     dependencies:
       '@effect/core': 0.0.16
       '@tsplus/stdlib': 0.2.8
       minimatch: 5.1.6
       typescript: 4.9.5
-      zod: 3.20.6
+      zod: 3.21.0
     dev: false
 
   /typescript/4.9.5:
@@ -69,6 +69,6 @@ packages:
     hasBin: true
     dev: false
 
-  /zod/3.20.6:
-    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
+  /zod/3.21.0:
+    resolution: {integrity: sha512-UYdykTcVxB6lfdyLzAqLyyYAlOcpoluECvjsdoaqfQmz9p+3LRaIqYcNiL/J2kFYp66fBM8wwBvIGVEjq7KtZw==}
     dev: false

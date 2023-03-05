@@ -55,6 +55,19 @@
       "encodeOrThrow",
       "effect/schema/Schema"
     ],
-    ["effect/schema/Parser#is", "getter", "guard", "effect/schema/Schema"]
+    ["effect/schema/Parser#is", "getter", "guard", "effect/schema/Schema"],
+
+    [
+      "@effect/schema/data/Date#parseString",
+      "getter",
+      "parseDate",
+      "effect/schema/Schema"
+    ],
+    [
+      "@effect/schema/data/Number#parseString",
+      "getter",
+      "parseNumber",
+      "effect/schema/Schema"
+    ]
   ]
 }
