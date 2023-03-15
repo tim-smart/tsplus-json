@@ -43,19 +43,52 @@
   "additionalExtensions": [
     ["effect/schema/Parser#decode", "getter", "decode", "effect/schema/Schema"],
     [
-      "effect/schema/Parser#decodeOrThrow",
+      "effect/schema/Parser#decodeEither",
       "getter",
-      "decodeOrThrow",
+      "decodeEither",
       "effect/schema/Schema"
     ],
+    [
+      "effect/schema/Parser#decodeOption",
+      "getter",
+      "decodeOption",
+      "effect/schema/Schema"
+    ],
+
     ["effect/schema/Parser#encode", "getter", "encode", "effect/schema/Schema"],
     [
-      "effect/schema/Parser#encodeOrThrow",
+      "effect/schema/Parser#encodeEither",
       "getter",
-      "encodeOrThrow",
+      "encodeEither",
       "effect/schema/Schema"
     ],
+    [
+      "effect/schema/Parser#encodeOption",
+      "getter",
+      "encodeOption",
+      "effect/schema/Schema"
+    ],
+
     ["effect/schema/Parser#is", "getter", "guard", "effect/schema/Schema"],
+
+    [
+      "effect/schema/Parser#validate",
+      "getter",
+      "validate",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#validateEither",
+      "getter",
+      "validateEither",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#validateOption",
+      "getter",
+      "validateOption",
+      "effect/schema/Schema"
+    ],
 
     [
       "@effect/schema/data/Date#parseString",
