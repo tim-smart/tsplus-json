@@ -43,6 +43,12 @@
   "additionalExtensions": [
     ["effect/schema/Parser#decode", "getter", "decode", "effect/schema/Schema"],
     [
+      "effect/schema/Parser#decodeEffect",
+      "getter",
+      "decodeEffect",
+      "effect/schema/Schema"
+    ],
+    [
       "effect/schema/Parser#decodeEither",
       "getter",
       "decodeEither",
@@ -54,8 +60,26 @@
       "decodeOption",
       "effect/schema/Schema"
     ],
+    [
+      "effect/schema/Parser#decodePromise",
+      "getter",
+      "decodePromise",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#decodeResult",
+      "getter",
+      "decodeResult",
+      "effect/schema/Schema"
+    ],
 
     ["effect/schema/Parser#encode", "getter", "encode", "effect/schema/Schema"],
+    [
+      "effect/schema/Parser#encodeEffect",
+      "getter",
+      "encodeEffect",
+      "effect/schema/Schema"
+    ],
     [
       "effect/schema/Parser#encodeEither",
       "getter",
@@ -68,13 +92,63 @@
       "encodeOption",
       "effect/schema/Schema"
     ],
+    [
+      "effect/schema/Parser#encodePromise",
+      "getter",
+      "encodePromise",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#encodeResult",
+      "getter",
+      "encodeResult",
+      "effect/schema/Schema"
+    ],
 
     ["effect/schema/Parser#is", "getter", "guard", "effect/schema/Schema"],
+
+    ["effect/schema/Parser#parse", "getter", "parse", "effect/schema/Schema"],
+    [
+      "effect/schema/Parser#parseEffect",
+      "getter",
+      "parseEffect",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#parseEither",
+      "getter",
+      "parseEither",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#parseOption",
+      "getter",
+      "parseOption",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#parsePromise",
+      "getter",
+      "parsePromise",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#parseResult",
+      "getter",
+      "parseResult",
+      "effect/schema/Schema"
+    ],
 
     [
       "effect/schema/Parser#validate",
       "getter",
       "validate",
+      "effect/schema/Schema"
+    ],
+    [
+      "effect/schema/Parser#validateEffect",
+      "getter",
+      "validateEffect",
       "effect/schema/Schema"
     ],
     [
@@ -89,17 +163,16 @@
       "validateOption",
       "effect/schema/Schema"
     ],
-
     [
-      "@effect/schema/data/Date#parseString",
+      "effect/schema/Parser#validatePromise",
       "getter",
-      "parseDate",
+      "validatePromise",
       "effect/schema/Schema"
     ],
     [
-      "@effect/schema/data/Number#parseString",
+      "effect/schema/Parser#validateResult",
       "getter",
-      "parseNumber",
+      "validateResult",
       "effect/schema/Schema"
     ]
   ]
