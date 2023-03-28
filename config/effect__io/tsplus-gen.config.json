@@ -107,19 +107,6 @@
       "make",
       "effect/io/Effect/Semaphore.Ops"
     ],
-    ["effect/io/Effect#service", "getter", "access", "effect/data/Context/Tag"],
-    [
-      "effect/io/Effect#serviceWith",
-      "fluent",
-      "accessWith",
-      "effect/data/Context/Tag"
-    ],
-    [
-      "effect/io/Effect#serviceWithEffect",
-      "fluent",
-      "accessWithEffect",
-      "effect/data/Context/Tag"
-    ],
     [
       "effect/io/Effect#unsafeMakeSemaphore",
       "static",
