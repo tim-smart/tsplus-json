@@ -1,0 +1,44 @@
+{
+  "project": {
+    "packageName": "@effect/cli",
+    "tsconfig": "tsconfig.build.json",
+    "rootDir": "src",
+    "exclude": ["**/internal_effect_untraced/**"],
+    "moduleConfig": {
+      "@effect/cli": {
+        "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
+        "fluentNamespaces": ["effect/cli"]
+      }
+    }
+  },
+  "namespaces": [
+    {
+      "name": "effect/cli",
+      "type": {
+        "include": true,
+        "includeCompanion": true,
+        "companionSuffix": ".Ops"
+      },
+      "static": {
+        "include": true,
+        "staticSuffix": ".Ops"
+      },
+      "fluent": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "pipeable": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      },
+      "getter": {
+        "include": true,
+        "includeStatic": true,
+        "staticSuffix": ".Aspects"
+      }
+    }
+  ],
+  "additionalExtensions": []
+}

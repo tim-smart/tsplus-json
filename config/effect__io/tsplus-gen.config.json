@@ -3,7 +3,7 @@
     "packageName": "@effect/io",
     "tsconfig": "tsconfig.build.json",
     "rootDir": "src",
-    "exclude": ["**/internal/**"],
+    "exclude": ["**/internal_effect_untraced/**"],
     "moduleConfig": {
       "@effect/io": {
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
