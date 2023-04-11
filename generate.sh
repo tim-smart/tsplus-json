@@ -63,7 +63,7 @@ for project in config/*; do
   mkdir dist
   cd source
 
-  pnpm i -P
+  pnpm i -P || true
 
   package_name="$(npm pkg get name | sed 's/[",]//g')"
   latest_version="$(npm pkg get version | sed 's/[",]//g')"
