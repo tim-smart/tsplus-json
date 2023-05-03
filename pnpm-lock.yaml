@@ -1,58 +1,58 @@
-lockfileVersion: 5.4
-
-specifiers:
-  prettier: ^2.8.4
-  tsplus-gen: ^0.2.31
+lockfileVersion: '6.0'
 
 dependencies:
-  tsplus-gen: 0.2.31
+  tsplus-gen:
+    specifier: ^0.2.31
+    version: 0.2.31
 
 devDependencies:
-  prettier: 2.8.4
+  prettier:
+    specifier: ^2.8.4
+    version: 2.8.4
 
 packages:
 
-  /@effect/core/0.0.16:
+  /@effect/core@0.0.16:
     resolution: {integrity: sha512-JugbKcqo9CPdm4n7t/buO4nYxKwThafh0tXVvPgRC3RcwuOS1dzo3tIk6RVq1wYh8Kg4df5SwmdED2VvN4c/RA==}
     dependencies:
       '@effect/printer': 0.0.4
       '@tsplus/stdlib': 0.2.8
     dev: false
 
-  /@effect/printer/0.0.4:
+  /@effect/printer@0.0.4:
     resolution: {integrity: sha512-oTn6U9GCg01E+kYwUBs4LM6k6hVq0pA7ZAYKdj972n2LjYeqg4+We6ZqoYWH2Pw5TDHOavtIEdYqt61uUxiZgg==}
     dependencies:
       '@tsplus/stdlib': 0.2.8
     dev: false
 
-  /@tsplus/stdlib/0.2.8:
+  /@tsplus/stdlib@0.2.8:
     resolution: {integrity: sha512-UKAN06h9V/wUflSbOU1WwACisXEi4+PHwGqR+bwxqcClrEAA8KKTTLZ0ATMbqbVAVTudE0vW4pd5iY6vGvSFBw==}
     dev: false
 
-  /balanced-match/1.0.2:
+  /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: false
 
-  /brace-expansion/2.0.1:
+  /brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
     dev: false
 
-  /minimatch/5.1.6:
+  /minimatch@5.1.6:
     resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
     dev: false
 
-  /prettier/2.8.4:
+  /prettier@2.8.4:
     resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
-  /tsplus-gen/0.2.31:
+  /tsplus-gen@0.2.31:
     resolution: {integrity: sha512-uKvC0GMnkn6c19gPXbT3Xe7Q8RlwdA9eeQiO+h0gfDuMsYqEt8uNaG/UjonNpw9lzlX4qcZ3YjwH1XeS4iFmAg==}
     hasBin: true
     dependencies:
@@ -63,12 +63,12 @@ packages:
       zod: 3.21.0
     dev: false
 
-  /typescript/4.9.5:
+  /typescript@4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: false
 
-  /zod/3.21.0:
+  /zod@3.21.0:
     resolution: {integrity: sha512-UYdykTcVxB6lfdyLzAqLyyYAlOcpoluECvjsdoaqfQmz9p+3LRaIqYcNiL/J2kFYp66fBM8wwBvIGVEjq7KtZw==}
     dev: false

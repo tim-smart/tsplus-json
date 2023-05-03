@@ -28,6 +28,10 @@
       "@effect/io/Metric": {
         "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
         "fluentNamespaces": ["effect/io/Metric"]
+      },
+      "@effect/io/Runtime": {
+        "staticPrefixes": ["from", "unsafeFrom", "make", "unsafeMake"],
+        "fluentNamespaces": ["effect/io/Runtime"]
       }
     }
   },
@@ -164,6 +168,15 @@
 
     ["effect/io/Queue.Enqueue#offer", "pipeable-operator", "<<"],
     ["effect/io/Queue.Enqueue#offerAll", "pipeable-operator", "+"],
+
+    ["effect/io/Runtime#runCallback", "getter", "runCallback"],
+    ["effect/io/Runtime#runFork", "getter", "runFork"],
+    ["effect/io/Runtime#runPromise", "getter", "runPromise"],
+    ["effect/io/Runtime#runPromiseEither", "getter", "runPromiseEither"],
+    ["effect/io/Runtime#runPromiseExit", "getter", "runPromiseExit"],
+    ["effect/io/Runtime#runSync", "getter", "runSync"],
+    ["effect/io/Runtime#runSyncEither", "getter", "runSyncEither"],
+    ["effect/io/Runtime#runSyncExit", "getter", "runSyncExit"],
 
     ["effect/io/Schedule#andThen", "pipeable-operator", "/"],
     ["effect/io/Schedule#andThenEither", "pipeable-operator", "%"],
